@@ -11,70 +11,72 @@
 		<div class="header-logo">
 			<a href="#home"><img src="img/logo.png" alt="Threehouse"></a>
 		</div>
-		<nav class="nav" >
-			<ul class="menu">
-				<li class="menu__elem">HOME</li>  		
-				<li class="menu__elem">ABOUT</li>
-				<li class="menu__elem">BLOG</li>
-				<li class="menu__elem">PORTFOLIO</li>
-				<li class="menu__elem">CONTACT</li>
+		<nav id="nav" class="nav" >
+			<ul id="menu" class="menu-hidden">
+				<li class="menu__element">HOME</li>
+				<li class="menu__element">ABOUT</li>
+				<li class="menu__element">BLOG</li>
+				<li class="menu__element">PORTFOLIO</li>
+				<li class="menu__element">CONTACT</li>
 			</ul>
-			<button class="menu-button nav__toggler" type="button" aria-expanded="false" title="Open/close menu">
-				<span class="menu-button__line"></span>	 
+			<button id="menu-button" class="menu-button nav__toggler" type="button" aria-expanded="false" title="Open/close menu">
 				<span class="menu-button__line"></span>
-				<span class="menu-button__line"></span> 
+				<span class="menu-button__line"></span>
+				<span class="menu-button__line"></span>
 			</button>
-		</nav>	
+		</nav>
 	</header>
-<!------------------------HOME-PAGE------------------------->
+<!--========================HOME-PAGE==========================-->
 <section id="home" class="home">
-	<h1 class="home__heading">CREATIVE DIGITAL SOLUTIONS</h1>
-	<p class="home__sentence">Proin iaculis purus consequat sem cure.</p>
-	<button class="home__btn">VIEW PORTFOLIO</button>
+	<div class="home-container container">
+		<h1 class="home__heading">CREATIVE DIGITAL SOLUTIONS</h1>
+		<p class="home__sentence">Proin iaculis purus consequat sem cure.</p>
+		<button class="home__btn">VIEW PORTFOLIO</button>
+	</div>
 </section>
-<!-----------------------SERVICES SECTION-------------------------->
+<!--====================-SERVICES SECTION========================-->
 <section id="services" class="services">
 	<div class="container">
 		<header class="section-heading">
-			<h1 class="section-title">PROFESSIONAL SERVICES</h1>
-			<p class="section-subtitle">Proin iaculis purus consequat sem cure </p>
+			<h2 class="section-heading__title">PROFESSIONAL SERVICES</h2>
+			<p class="section-heading__subtitle">Proin iaculis purus consequat sem cure </p>
 		</header>
-		
+
 		<div class="services-main-content">
-		
+
 			<div class="services-block services-block--design">
 				<img src="img/icon_heart.png" class="services-block__icon">
-				<h4 class="services-block__header">BEAUTIFUL DESIGNS</h4>
+				<h3 class="services-block__header">BEAUTIFUL DESIGNS</h3>
 				<p class="services-block__paragraph">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 			</div>
-		
+
 			<div class="services-block services-block--web">
 				<img src="img/icon_phone.png" class="services-block__icon">
-				<h4 class="services-block__header">RESPONSIVE WEB</h4>
+				<h3 class="services-block__header">RESPONSIVE WEB</h3>
 				<p class="services-block__paragraph">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 			</div>
-		
+
 			<div class="services-block services-block--tools">
 				<img src="img/icon_tools.png" class="services-block__icon">
-				<h4 class="services-block__header">MARKETING TOOLS</h4>
+				<h3 class="services-block__header">MARKETING TOOLS</h3>
 				<p class="services-block__paragraph">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 			</div>
-			
+
 		</div><!--/services-main-content-->
-		
+
 		</div><!--/container-->
 </section>
-<!-----------------------OFFER SECTION-------------------------->
+<!--==============================OFFER SECTION======================================-->
 <section class="offer">
 <div class="container">
 
 	<div class="offer-left">
 		<img src="img/tool.png" alt="">
 	</div><!--/offer-left-->
-	
+
 	<div class="offer-right">
-		<h1 class="offer-heading">JUST RELAX<span class="offer-heading__sign">&</span><br> LET US DO THE HEAVY LIFTING</h1>
-		<p class="offer__paragraph">Pr oin iaculis purus consequat sem cure  digni ssim. Donec 
+		<h2 class="offer-heading">JUST RELAX<span class="offer-heading__sign">&</span><br> LET US DO THE HEAVY LIFTING</h2>
+		<p class="offer__paragraph">Pr oin iaculis purus consequat sem cure  digni ssim. Donec
 			porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 		<ul class="offer-list">
 			<li class="offer-list__element">Initial Setup & Customizations</li>
@@ -83,34 +85,34 @@
 		</ul>
 		<button class="offer__button">LEARN MORE</button>
 	</div><!--/offer-right-->
-	
+
 </div><!--/container-->
 </section>
-<!-----------------------PROJECT SECTION-------------------------->
+<!--=============================PROJECT SECTION======================================-->
 <section class="project">
 <div class="container">
 	<header class="section-heading">
-		<h1 class="section-heading__title">latest project</h1>
+		<h2 class="section-heading__title">latest project</h2>
 		<p class="section-heading__subtitle">Proin iaculis purus consequat sem cure </p>
-	</header><!--/section-heading-->	
+	</header><!--/section-heading-->
 
 	<div class="project-main-content">
 		<h3 class="project-main-content__title">Developing a framework</h3>
-		<p class="project-main-content__paragraph">Proin iaculis purus consequat sem cure  digni ssim 
+		<p class="project-main-content__paragraph">Proin iaculis purus consequat sem cure  digni ssim
 		donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-		
+
 		<div class="project-list">
 			<div class="project-list-element">
 				<img src="img/icon_e_commerance.png">
-				<p>Proin iaculis purus consequat sem cure  digni ssim. </p>        	
+				<p>Proin iaculis purus consequat sem cure  digni ssim. </p>
 			</div>
 		    <div class="project-list-element">
 				<img src="img/icon_check.png">
-				<p>Proin iaculis purus consequat sem cure  digni ssim. </p>        	
+				<p>Proin iaculis purus consequat sem cure  digni ssim. </p>
 			</div>
 			<div class="project-list-element">
 				<img src="img/icon_secure.png">
-				<p>Proin iaculis purus consequat sem cure  digni ssim. </p>        	
+				<p>Proin iaculis purus consequat sem cure  digni ssim. </p>
 			</div>
 		</div>
 		<p class="project-main-content__paragraph">
@@ -118,60 +120,60 @@
 		</p>
 		<a href="#" class="project-link">VIEW DETAILS<img src="img/Arrow.png"></a>
 	</div><!--/project-main-content-->
-</div><!--/container-->	
+</div><!--/container-->
 </section>
-<!-----------------------VALUES SECTION----------------------------------------------->
+<!--===========================VALUES SECTION========================================-->
 <section class="values">
 	<div class="values-heading">
-		<h1 class="values-heading__title title">culture & Values</h1>
+		<h2 class="values-heading__title title">culture & Values</h2>
 		<p class="values-heading__subtitle subtitle">Proin iaculis purus consequat cure. </p>
 	</div>
-	
+
 	<div class="values-content">
 		<div class="values-item">  <!-- czy moge tak robić, item dodać do values?-->
 			<img class="values-item_image" src="img/icon_tune.png">
 			<h3 class="values-item__name">Work-Life Balance</h3>
-			<p class="values-item__text">Proin iaculis purus consequat sem cure 
-			digni ssim. Donec porttitora entum suscipit 
+			<p class="values-item__text">Proin iaculis purus consequat sem cure
+			digni ssim. Donec porttitora entum suscipit
 			aenean rhoncus posuere odio in tincidunt.</p>
 		</div>
 		<div class="values-item">  <!-- czy moge tak robić, item dodać do values?-->
 			<img class="values-item_image" src="img/icon_tune.png">
 			<h3 class="values-item__name">Quality Over Quantity</h3>
-			<p class="values-item__text">Proin iaculis purus consequat sem cure 
-			digni ssim. Donec porttitora entum suscipit 
+			<p class="values-item__text">Proin iaculis purus consequat sem cure
+			digni ssim. Donec porttitora entum suscipit
 			aenean rhoncus posuere odio in tincidunt.</p>
 		</div>
 		<div class="values-item">  <!-- czy moge tak robić, item dodać do values?-->
 			<img class="values-item_image" src="img/icon_tune.png">
 			<h3 class="values-item__name">Deliver Excellence</h3>
-			<p class="values-item__text">Proin iaculis purus consequat sem cure 
-			digni ssim. Donec porttitora entum suscipit 
+			<p class="values-item__text">Proin iaculis purus consequat sem cure
+			digni ssim. Donec porttitora entum suscipit
 			aenean rhoncus posuere odio in tincidunt.</p>
-		</div>	
-	</div>	
+		</div>
+	</div>
 </section>
-	
-<!-----------------------CLIENTS SECTION----------------------------------------------->	
+
+<!-----------------------CLIENTS SECTION----------------------------------------------->
 <section class="clients">
 	<div class="clients-heading">
-		<h1 class="clients-heading__title title">our awesome clients</h1>
+		<h2 class="clients-heading__title title">our awesome clients</h2>
 		<p class="clients-heading__subtitle subtitle">Proin iaculis purus consequat sem cure. </p>
 	</div>
-	
+
 	<div class="clients-container">
 		<div class="person-first">
 			<img  class="person-image" src="img/woman.jpg">
 			<div class="person-opinion">
-				<p class="person-opinion__sentence">“ Proin iaculis purus consequat sem cure  digni ssim 
+				<p class="person-opinion__sentence">“ Proin iaculis purus consequat sem cure  digni ssim
 				donec porttitora entum suscipit aenean rhoncus. ” </p>
 				<p class="person-opinion__name">- Jamie Richardson, Founder of Cocoa Media</p>
 			</div>
 		</div>
-		
+
 		<div class="person-second">
 			<div class="person-opinion">
-				<p class="person-opinion__sentence">“ Proin iaculis purus consequat sem cure  digni ssim 
+				<p class="person-opinion__sentence">“ Proin iaculis purus consequat sem cure  digni ssim
 				donec porttitora entum suscipit aenean rhoncus. ” </p>
 				<p class="person-opinion__name">- Jamie Richardson, Founder of Cocoa Media</p>
 			</div>
@@ -182,7 +184,7 @@
 <!------------------------------------CONTACT SECTION-------------------------------------->
 <section class="contact">
 	<div class="contact-container">
-		<h1 class="contact-content__heading">ready to talk about your next project?</h1>
+		<h2 class="contact-content__heading">ready to talk about your next project?</h2>
 		<button class="contact_content_button" role="button" type="button">Contact us</button> <!--role czy type powinno być czy oba?-->
 	</div>
 </section>
@@ -206,10 +208,10 @@
 <!---------------------------------------INFOS SECTION----------------------------->
 <section class="infos">
 	<div class="container">
-	
+
 		<div class="infos-block infos-block--contact">
 			<h3 class="infos-block__heading">Contact Us</h3>
-			
+
 			<div class="infos-elem">
 				<img src="img/location_icon.png">
 				<p>55 Main St.<br>Toronto, ON<br>M1H 3A5</p>
@@ -223,9 +225,9 @@
 				<p>hello@treehouse.com</p>
 			</div>
 		</div><!--/infos-block-->
-		
-		
-		
+
+
+
 		<div class="infos-block infos-block--post">
 			<div class="infos-elem">
 				<img src="img/news_icon.png">
@@ -248,16 +250,16 @@
 				<p>Learn Web Design In 30 Days!</p>
 			</div>
 		</div>
-		
+
 		<div class="infos-block infos-block--tweets">
-		
+
 			<div class="infos-elem">
 				<img src="img/twitter_icon.png">
 				<p>Confucius: Life is really simple, but we insist on making it complicated
 				<br><b>#famousquotes</b></p><br>
 				<p class="tweet-time">8 mins ago</p>
 			</div>
-			
+
 			<div class="infos-elem">
 				<img src="img/twitter_icon.png">
 				<p>Grab the Free Treehouse web template at FreebiesXpress!<br>
@@ -265,7 +267,7 @@
 				<p class="tweet-time">2 days ago</p>
 			</div>
 		</div><!--/infos-tweets-->
-		
+
 	</div><!--/container-->
 </section>
 <!--------------------------------FOOTER------------------------------>
@@ -279,12 +281,13 @@
 			<a href="#" class="social-link"><img src="img/fb_icon.png" class="social-icon"></a>
 			<a href="#" class="social-link"><img src="img/pinterest_icon.png" class="social-icon"></a>
 			<a href="#" class="social-link"><img src="img/google_icon.png" class="social-icon"></a>
-			
+
 		</div>
 	</div>
 </footer>
 
 
-
+<script src="js/script.js">
+</script>
 </body>
 </html>
