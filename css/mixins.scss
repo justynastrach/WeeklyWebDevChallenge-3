@@ -1,0 +1,23 @@
+@mixin flex_col (){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex_row (){
+	display: flex;
+    flex-direction: row;
+    //align-items: center;
+    //justify-content: center;
+}
+@mixin green_btn($width){
+	width: $width;
+	height: 60px;
+	margin-top: 30px;
+	border-radius: 30px;
+	border: none;
+	color: #fff;
+	font-family:  'Montserrat-Bold';
+	background-color: $light-green;
+}

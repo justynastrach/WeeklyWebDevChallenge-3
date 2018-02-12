@@ -16,24 +16,31 @@ body {
   padding: 0;
   font-size: 62.5%; }
 
+h1, h2, h3, h4 {
+  color: #222222;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0; }
+
 h1 {
   font-size: 4.5em; }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.6em;
   font-family: 'Montserrat-Bold';
   padding: 0;
-  margin: 0;
-  text-align: center; }
+  margin: 0; }
 
 h3 {
   font-family: 'Montserrat-Bold';
-  font-size: 1.8em; }
+  font-size: 1.5em; }
 
 p {
   font-size: 1.5em;
   font-family: 'RobotoSlab-Regular';
-  text-align: center; }
+  text-align: center;
+  color: #777777; }
 
 .header {
   position: fixed;
@@ -70,7 +77,8 @@ p {
     	background-color: #eff5ee;
     }*/ }
     .menu__element:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #7cc576; }
 
 .menu-button {
   position: absolute;
@@ -98,6 +106,16 @@ p {
   .menu-button__line:nth-child(3) {
     top: 25px; }
 
+/*==========TO ALL SECTIONS============*/
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 5px 30px; }
+  .section-heading__subtitle {
+    color: #777777; }
+
 /*============HOME SECTION==============*/
 .home {
   min-height: 100vh;
@@ -114,7 +132,15 @@ p {
     text-align: center; }
   .home__sentence {
     color: #fff; }
-  .home__btn {
+  .home__button {
+    /*width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-family:  'Montserrat-Bold';
+    background-color: $light-green;*/
     width: 200px;
     height: 60px;
     margin-top: 30px;
@@ -131,23 +157,97 @@ p {
   justify-content: center;
   padding: 0 3%; }
 
-/*================= SERVICES SECTION =================*/
-.section-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 5px; }
-  .section-heading__subtitle {
-    color: #777777; }
-
+/*======== SERVICES SECTION =========*/
 .services-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .services-block__icon {
+    margin-bottom: 15px; }
   .services-block__paragraph {
-    color: #777777; }
+    padding: 0 10px;
+    margin-bottom: 30px; }
+
+/*===========OFFER SECTION=============*/
+.offer {
+  height: 650px;
+  background: url("../img/bg_learn_more.jpg");
+  background-size: cover;
+  color: #CCCCCC; }
+  .offer__paragraph {
+    color: #CCCCCC; }
+  .offer__button {
+    width: 160px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat-Bold';
+    background-color: #7cc576; }
+
+.offer-space {
+  display: none; }
+
+.offer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.offer-heading {
+  margin-top: 100px;
+  color: #fff; }
+  .offer-heading__sign {
+    padding-left: 10px;
+    color: #7cc576; }
+
+.offer-list {
+  font-size: 1.5em;
+  list-style: none;
+  padding: 0; }
+  .offer-list__element {
+    height: 50px;
+    line-height: 50px; }
+  .offer-list__element:before {
+    content: url("../img/check.png");
+    /* with class ModalCarrot ??*/
+    position: relative;
+    top: 10px;
+    left: -10px; }
+
+/*===========PROJECT SECTION=========*/
+/*.project-list>div:nth-child(1){
+	//background-color: black;
+
+}*/
+.project {
+  height: 800px; }
+
+.project-list-element {
+  display: flex;
+  flex-direction: row; }
+  .project-list-element__img {
+    background-color: pink;
+    width: 65px;
+    height: 65px; }
+
+.text-wrapper {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.project-link {
+  text-decoration: none;
+  color: #7cc576;
+  font-family: 'RobotoSlab-Bold';
+  font-size: 1.2em; }
+  .project-link__img {
+    padding-left: 5px; }
 
 .person-image, .offer-left img {
   width: 50%; }

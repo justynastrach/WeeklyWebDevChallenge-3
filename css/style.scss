@@ -24,25 +24,34 @@ body{
 	padding: 0;
 	font-size: 62.5%;
 }
+h1,h2,h3,h4{
+	color: #222222;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0;
+    margin: 0;
+}
 h1{
 	font-size: 4.5em;
 }
 h2{
-  font-size: 2.5em;
-  font-family: 'Montserrat-Bold';
-  padding: 0;
-  margin: 0;
-  text-align: center;
+  	font-size: 2.6em;
+  	font-family: 'Montserrat-Bold';
+  	padding: 0;
+    margin: 0;
+ 
 }
 h3{
     font-family: 'Montserrat-Bold';
-  font-size: 1.8em;
+    font-size: 1.5em;
 }
 p{
 	font-size: 1.5em;
 	font-family: 'RobotoSlab-Regular';
-  text-align: center;
+    text-align: center;
+	color: $dark-grey;
 }
+
 .header{
 	position: fixed;
 	margin: 0;
@@ -72,10 +81,12 @@ p{
 	margin-top: 0;
 	padding: 20px 0;
 	list-style: none;
+	
 	&__element{
 		padding: 5px 0;
 		&:hover{
 			cursor: pointer;
+			background-color: $light-green;
 		}
 		/*&:nth-child(odd){
 			background-color: #eff5ee;
@@ -118,6 +129,19 @@ p{
 		top: 25px;
 	}
 }
+/*==========TO ALL SECTIONS============*/
+.section-heading{
+	@include flex_col();
+  	 padding: 40px 5px 30px;
+	//background-color: #ffb9fa;
+	
+	  &__title{
+
+	  }
+	  &__subtitle{
+		color: $dark-grey;
+	  }
+}
 
 /*============HOME SECTION==============*/
 .home{
@@ -137,15 +161,16 @@ p{
 	&__sentence{
 		color: #fff;
 	}
-	&__btn{
-		width: 200px;
+	&__button{
+		/*width: 200px;
 		height: 60px;
 		margin-top: 30px;
 		border-radius: 30px;
 		border: none;
 		color: #fff;
 		font-family:  'Montserrat-Bold';
-		background-color: $light-green;
+		background-color: $light-green;*/
+		@include green_btn(200px);
 }
 	}
 .container{
@@ -156,31 +181,120 @@ p{
 	padding: 0 3%;
 }
 
-/*================= SERVICES SECTION =================*/
-.section-heading{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 5px;
-  &__title{
-
-  }
-  &__subtitle{
-    color: $dark-grey;
-  }
-}
-
+/*======== SERVICES SECTION =========*/
 .services-block{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	@include flex_col();
+	
 
-  &__paragraph{
-    color: $dark-grey;
-  }
+	&__icon{
+		margin-bottom: 15px;
+	}
+	
+    &__paragraph{
+		padding: 0 10px;
+    	margin-bottom: 30px;
+    }
 }
+
+/*===========OFFER SECTION=============*/
+.offer{
+	height: 650px;
+	background: url('../img/bg_learn_more.jpg');
+	background-size: cover;
+	color: #CCCCCC;
+	
+	&__paragraph{
+		color: #CCCCCC;
+	}
+	
+	&__button{
+		@include green_btn(160px);
+	}
+		
+}
+.offer-space{
+	display: none;
+}
+.offer-main{
+	@include flex_col();
+}
+.offer-heading{
+	margin-top: 100px;
+	color: #fff;
+	//text-align: left;
+	//padding: 20px;
+	
+	&__sign{
+		padding-left: 10px;
+		color: $light-green;
+	}
+}
+.offer-list{
+	font-size: 1.5em;
+	list-style: none;
+	padding: 0;
+	//margin-left: 20%;
+	
+	
+	&__element{
+		height: 50px;
+		line-height: 50px;
+		
+
+	}
+	&__element:before{
+		content:url('../img/check.png'); /* with class ModalCarrot ??*/
+  		position:relative; 
+		top:10px;
+		left: -10px;
+	}
+}
+/*===========PROJECT SECTION=========*/
+
+/*.project-list>div:nth-child(1){
+	//background-color: black;
+
+}*/
+.project{
+	height: 800px;
+	
+}
+.project-list-element{
+//	background-color: #d4d0d0;
+	@include flex_row();
+	
+	&__img{
+		background-color: pink;
+		width: 65px;
+		height: 65px;
+	}
+	&__heading{
+		
+	}
+	&__paragraph{
+		//background-color: aquamarine;
+	}
+}
+
+.text-wrapper{
+	padding-top: 15px;
+	@include flex_col();
+	//background-color: red;
+	width: 100%
+	
+}
+
+.project-link{
+	text-decoration: none;
+	color: $light-green;
+	font-family: 'RobotoSlab-Bold';
+	font-size: 1.2em;	
+	
+	&__img{
+		padding-left: 5px;
+	}
+}
+
 
 
 
