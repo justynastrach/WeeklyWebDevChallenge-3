@@ -24,7 +24,7 @@ body{
 	padding: 0;
 	font-size: 62.5%;
 }
-h1,h2,h3,h4{
+h1,h2,h3{
 	color: #222222;
 	text-align: center;
 	text-transform: uppercase;
@@ -45,13 +45,26 @@ h3{
     font-family: 'Montserrat-Bold';
     font-size: 1.5em;
 }
+
 p{
 	font-size: 1.5em;
 	font-family: 'RobotoSlab-Regular';
     text-align: center;
 	color: $dark-grey;
 }
+.container{
+	margin: 30px 20px;
+	//background-color: pink;
+}
+.title{
+	font-family: 'Montserrat-Bold', 'RobotoSlab-Bold';
+	padding-top: 20px;
+}
+.subtitle{
+	
+}
 
+/*==============MAIN============*/
 .header{
 	position: fixed;
 	margin: 0;
@@ -129,19 +142,6 @@ p{
 		top: 25px;
 	}
 }
-/*==========TO ALL SECTIONS============*/
-.section-heading{
-	@include flex_col();
-  	 padding: 40px 5px 30px;
-	//background-color: #ffb9fa;
-	
-	  &__title{
-
-	  }
-	  &__subtitle{
-		color: $dark-grey;
-	  }
-}
 
 /*============HOME SECTION==============*/
 .home{
@@ -151,25 +151,17 @@ p{
 	background-repeat: no-repeat;
 	background-position: center;
 	z-index: 1;
-	&__heading{
+	&__title{
 		padding: 0;
 		margin: 0;
 		color: #fff;
 		margin-top: 150px;
 		text-align: center;
 	}
-	&__sentence{
+	&__subtitle{
 		color: #fff;
 	}
 	&__button{
-		/*width: 200px;
-		height: 60px;
-		margin-top: 30px;
-		border-radius: 30px;
-		border: none;
-		color: #fff;
-		font-family:  'Montserrat-Bold';
-		background-color: $light-green;*/
 		@include green_btn(200px);
 }
 	}
@@ -182,18 +174,16 @@ p{
 }
 
 /*======== SERVICES SECTION =========*/
-.services-block{
+.services-main{
+	padding: 10px 0;
+}
+.services-item{
 	@include flex_col();
-	
-
-	&__icon{
-		margin-bottom: 15px;
+	padding: 5px 0;
+		
+	&__title{
+		padding-top: 5px;
 	}
-	
-    &__paragraph{
-		padding: 0 10px;
-    	margin-bottom: 30px;
-    }
 }
 
 /*===========OFFER SECTION=============*/
@@ -202,14 +192,7 @@ p{
 	background: url('../img/bg_learn_more.jpg');
 	background-size: cover;
 	color: #CCCCCC;
-	
-	&__paragraph{
-		color: #CCCCCC;
-	}
-	
-	&__button{
-		@include green_btn(160px);
-	}
+
 		
 }
 .offer-space{
@@ -217,17 +200,21 @@ p{
 }
 .offer-main{
 	@include flex_col();
+	&__btn{
+		@include green_btn(160px);
+	}
 }
-.offer-heading{
+.offer-title{
 	margin-top: 100px;
 	color: #fff;
-	//text-align: left;
-	//padding: 20px;
 	
 	&__sign{
 		padding-left: 10px;
 		color: $light-green;
 	}
+}
+.offer-subtitle{
+	
 }
 .offer-list{
 	font-size: 1.5em;
@@ -251,52 +238,73 @@ p{
 }
 /*===========PROJECT SECTION=========*/
 
-/*.project-list>div:nth-child(1){
-	//background-color: black;
-
-}*/
 .project{
-	height: 800px;
-	
+
 }
-.project-list-element{
-//	background-color: #d4d0d0;
+.project-main{
+	padding: 30px 0;
+	&__subtitle{
+		padding-bottom: 20px;
+	}
+	&__link{
+		text-decoration: none;
+		color: $light-green;
+		font-family: 'RobotoSlab-Bold';
+		font-size: 1.2em;
+		margin-top: 40px;
+	}
+	&__link::after{
+		content: url(../img/Arrow.png);
+		margin-left: 10px;
+		vertical-align: -2px;
+	}
+}
+.project-list{
+	margin: 30px 0;
+}
+.project-item{
 	@include flex_row();
-	
-	&__img{
-		background-color: pink;
-		width: 65px;
-		height: 65px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	max-width: 500px;
+	&__icon{
+		width: 60px;
+		height: 60px;
 	}
-	&__heading{
-		
+	&__title{
+		margin: 0;
+		font-size: 1.5em;
 	}
-	&__paragraph{
-		//background-color: aquamarine;
+	&__subtitle{
+		margin: 0;
 	}
 }
-
 .text-wrapper{
-	padding-top: 15px;
+	//padding-top: 15px;
 	@include flex_col();
-	//background-color: red;
-	width: 100%
-	
+	margin-left: 5px;
 }
-
-.project-link{
-	text-decoration: none;
-	color: $light-green;
-	font-family: 'RobotoSlab-Bold';
-	font-size: 1.2em;	
+//============VALUES SECTION============
+.values{
+	background-color: #f9f9f9;
+	//background-color: #aca7a7;
+}
+.values-main{
+	padding: 20px 0;
+}
+.values-item{
+	@include flex_col();
 	
 	&__img{
-		padding-left: 5px;
+		width: 70px;
+		height: 70px;
+	}
+	&__title{
+		margin-top: 10px;
 	}
 }
-
-
-
 
 
 .person-image, .offer-left img{
