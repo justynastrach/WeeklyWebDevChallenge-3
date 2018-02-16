@@ -1,0 +1,77 @@
+.header{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	height: 60px;
+	width: 100%;
+}
+.header-logo{
+	width: 50%;
+	margin-top: 15px;
+	margin-left: 5%;
+}
+.menu-hidden{
+	display: none;
+}
+.menu{
+	display: block;
+	background-color: #fff;
+	height: 150px;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	font-size: 1.8em;
+	margin-top: 0;
+	padding: 20px 0;
+	list-style: none;
+	
+	&__element{
+		padding: 5px 0;
+		&:hover{
+			cursor: pointer;
+			background-color: $light-green;
+		}
+		/*&:nth-child(odd){
+			background-color: #eff5ee;
+		}*/
+
+	}
+}
+.menu-button{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	right: 40px;
+	top: 12.5px;
+	width: 40px;
+	height: 35px;
+	background-color: transparent;
+	border: none;
+
+	&:hover{
+		cursor: pointer;
+	}
+
+
+	&__line{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 5px;
+		border-radius: 3px;
+		background-color: $dark-grey;
+	}
+
+	&__line:nth-child(1){
+		top: 5px;
+	}
+	&__line:nth-child(2){
+		top: 15px;
+	}
+	&__line:nth-child(3){
+		top: 25px;
+	}
+}

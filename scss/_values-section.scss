@@ -1,0 +1,23 @@
+.values{
+	background-color: #f9f9f9;
+	//background-color: #aca7a7;
+}
+.container-v{
+	//padding-top: 50px;
+	//background-color: pink;
+}
+
+.values-item{
+	@include flex_col();
+	
+	&__img{
+		width: 70px;
+		height: 70px;
+	}
+	&__title{
+		padding-top: 10px;
+	}
+	&__subtitle{
+		padding-bottom: 10px;
+	}
+}

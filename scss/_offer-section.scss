@@ -1,0 +1,44 @@
+.offer{
+	height: 650px;
+	background: url('../../img/bg_learn_more.jpg');
+	background-size: cover;
+	color: #CCCCCC;
+		
+}
+.offer-space{
+	display: none;
+}
+.offer-main{
+	@include flex_col();
+	&__btn{
+		@include green_btn(160px);
+	}
+}
+.offer-title{
+	color: #fff;
+	
+	&__sign{
+		padding-left: 10px;
+		color: $light-green;
+	}
+}
+.offer-list{
+	font-size: 1.5em;
+	list-style: none;
+	padding: 0;
+	//margin-left: 20%;
+	
+	
+	&__element{
+		height: 50px;
+		line-height: 50px;
+		
+
+	}
+	&__element:before{
+		content:url('../../img/check.png'); /* with class ModalCarrot ??*/
+  		position:relative; 
+		top:10px;
+		left: -10px;
+	}
+}

@@ -1,0 +1,32 @@
+.home {
+  min-height: 100vh;
+  background: url(../../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1; }
+  .home__title {
+    font-size: 4.5em;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    margin-top: 150px;
+    text-align: center; }
+  .home__subtitle {
+    color: #fff; }
+  .home__button {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat-Bold';
+    background-color: #7cc576; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3%; }

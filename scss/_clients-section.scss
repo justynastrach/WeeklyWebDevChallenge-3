@@ -1,0 +1,56 @@
+.clients-main{
+	padding-bottom: 50px;
+}
+.person{
+	@include flex_col();
+	
+	
+}
+.person-s-img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-image: url(../../img/man.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-color: black;
+}
+.person-first-img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-image: url(../../img/woman.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.person-opinion{
+	width: 90%;
+	background-color: $light-grey;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	position: relative;
+	padding: 10px;
+	
+	&::before{
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-bottom: 15px solid $light-grey;
+		position: absolute;
+		left: 50%;
+		top: -5px;
+		transform: translateX(-50%) translateY(-50%);	
+	}
+	&__sentence{
+		font-size: 1.6em;
+		margin-bottom: 5px;
+	
+	}
+	&__name{
+		color: $light-green;
+		margin-bottom: 20px;
+	}
+}
