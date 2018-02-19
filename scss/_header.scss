@@ -7,6 +7,7 @@
 	background-color: #fff;
 	height: 60px;
 	width: 100%;
+	z-index: 2;
 }
 .header-logo{
 	width: 50%;
@@ -14,10 +15,14 @@
 	margin-left: 5%;
 }
 .menu-hidden{
+	animation: menu-close 500ms ease-in-out forwards;
+	
 	display: none;
+	
 }
 .menu{
-	display: block;
+	//display: block;
+	position: absolute;
 	background-color: #fff;
 	height: 150px;
 	width: 100%;
@@ -27,6 +32,8 @@
 	margin-top: 0;
 	padding: 20px 0;
 	list-style: none;
+	
+	animation: menu-open 500ms ease-in-out forwards;
 	
 	&__element{
 		padding: 5px 0;
@@ -40,6 +47,7 @@
 
 	}
 }
+
 .menu-button{
 	position: absolute;
 	margin: 0;
@@ -75,3 +83,31 @@
 		top: 25px;
 	}
 }
+
+@keyframes menu-open{
+	0%{
+		transform: rotateX(50deg) translateY(50px);
+	}
+	100%{
+		transform: rotateY(0deg) translateX(0px);
+	}
+}
+@keyframes menu-close{
+		0%{
+		display: block;
+		background-color: #fff;
+		transform: rotateY(0deg) translateX(0px);
+			
+	}
+	100%{
+		background-color: #fff;
+		transform: rotateY(-90deg) translateY(50px);
+
+	}
+
+
+}
+
+
+
+

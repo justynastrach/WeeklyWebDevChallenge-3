@@ -1,40 +1,40 @@
 .infos{
 	background-color: #222222;
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 10px;
 
 }
 .infos-block{
 	display: flex;
 	flex-direction: column;
 	width: 80%;
+	margin-bottom: 20px;
 	
 	&__title{
+		margin-bottom: 20px;
 		font-size: 1.8em;
 		color: #fff;
-		padding-top: 20px;
+		
 	}
 }
 .infos-item{
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	//background-color: pink;
+	justify-content: flex-start;
+	//align-items: center;
 	
 	
 	&__text{
-		margin-left: 20px;
 		width: 90%;
 		color: #fff;
-		display: flex;
-  		flex-wrap: wrap;
 		text-align: left;
-		background-color: yellow;	
+		margin: 0 20px;
 	}
 	
 	&__icon{
 		width: 20px;
-		height: auto;
+		height: 100%;
 	  
 	}
 }
@@ -44,7 +44,8 @@
 	margin: 0;
 	text-align: left;
 	margin-left: 20px;
-	background-color: green;
+	margin-top: 10px;
+
 }
 
 .infos-text-wrapper{
@@ -53,8 +54,6 @@
 	align-items: center;
 	justify-content: center;
 	align-items: flex-start;
-	padding: 0;
-	background-color: red;
 	
 	
 }

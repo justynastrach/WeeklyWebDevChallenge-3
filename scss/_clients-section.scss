@@ -2,15 +2,14 @@
 	padding-bottom: 50px;
 }
 .person{
-	@include flex_col();
-	
+	@include flex_col();	
 	
 }
 .person-s-img{
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	background-image: url(../../img/man.jpeg);
+	background-image: url(../img/woman.jpg);
 	background-position: center;
 	background-size: cover;
 	background-color: black;
@@ -19,7 +18,7 @@
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	background-image: url(../../img/woman.jpg);
+	background-image: url(../img/man.jpeg);
 	background-position: center;
 	background-size: cover;
 }

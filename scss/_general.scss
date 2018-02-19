@@ -31,11 +31,10 @@ h1,h2,h3{
 }
 
 h2{
-  	font-size: 2.6em;
+  	font-size: 2.5em;
   	font-family: 'Montserrat-Bold';
   	padding: 0;
     margin: 0;
- 
 }
 h3{
     font-family: 'Montserrat-Bold';
@@ -43,7 +42,7 @@ h3{
 }
 
 p{
-	font-size: 1.5em;
+	//font-size: 1.5em;
 	font-family: 'RobotoSlab-Regular';
     text-align: center;
 	color: $dark-grey;
@@ -52,11 +51,15 @@ p{
 .title{
 	font-family: 'Montserrat-Bold', 'RobotoSlab-Bold';
 	padding-top: 50px;
+	font-size: 2.5em;
 	
 }
 .subtitle{
+	font-size: 16px;
 	padding-bottom: 20px;
 }
 .container{
-	padding: 0 10px;
+	//padding: 0 30px;
+	margin: 0 15px;
+	//background-color: pink;
 }

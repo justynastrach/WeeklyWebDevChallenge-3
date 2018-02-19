@@ -1,12 +1,13 @@
 .home {
   min-height: 100vh;
-  background: url(../../img/bg.jpg);
+  background: url(../img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1; }
   .home__title {
     font-size: 4.5em;
+	letter-spacing: 1.5px;
     padding: 0;
     margin: 0;
     color: #fff;

@@ -2,21 +2,25 @@
 	//height: 700px;
 }
 .project-main{
-	padding: 30px 0;
+	padding-bottom: 50px;
 	&__subtitle{
 		padding-bottom: 20px;
+		font-size: 14px;
 	}
 	&__link{
 		text-decoration: none;
 		color: $light-green;
 		font-family: 'RobotoSlab-Bold';
-		font-size: 1.2em;
+		font-size: 1.4em;
 		margin-top: 40px;
+		position: relative;
 	}
 	&__link::after{
-		content: url(../../img/Arrow.png);
-		margin-left: 10px;
-		vertical-align: -2px;
+		content: url(../img/Arrow.png);
+		position: absolute;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		right: -30px;
 	}
 }
 .project-list{
@@ -35,9 +39,10 @@
 	}
 	&__title{
 		margin: 0;
-		font-size: 1.5em;
+		font-size: 1.6em;
 	}
 	&__subtitle{
+		font-size: 1.4em;
 		margin: 0;
 	}
 }
