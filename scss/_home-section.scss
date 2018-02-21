@@ -4,26 +4,36 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1; }
-  .home__title {
-    font-size: 4.5em;
-	letter-spacing: 1.5px;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-    margin-top: 150px;
-    text-align: center; }
-  .home__subtitle {
-    color: #fff; }
-  .home__button {
-    width: 200px;
-    height: 60px;
-    margin-top: 30px;
-    border-radius: 30px;
-    border: none;
-    color: #fff;
-    font-family: 'Montserrat-Bold';
-    background-color: #7cc576; }
+  z-index: 1; 
+ 	 &__title {
+		font-size: 4.5em;
+		letter-spacing: 1.5px;
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		margin-top: 150px;
+		text-align: center;
+		
+		 @media (min-width: $sm){
+			 width: 60%;
+		 }
+		 
+	}
+  	&__subtitle {
+    	color: #fff; 
+	}
+	
+ 	 &__button {
+		width: 200px;
+		height: 60px;
+		margin-top: 30px;
+		border-radius: 30px;
+		border: none;
+		color: #fff;
+		font-family: 'Montserrat-Bold';
+		background-color: #7cc576;
+	}
+}
 
 .container {
   display: flex;

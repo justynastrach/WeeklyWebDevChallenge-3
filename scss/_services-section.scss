@@ -1,9 +1,20 @@
 .services{
 	padding-bottom: 30px;
+	
+}
+.services-main{
+	
+	@media (min-width: $sm){
+		display: flex;
+		flex-direction: row;
+		
+	}
+	
 }
 .services-item{
 	@include flex_col();
 	margin-bottom: 30px;
+	
 	
 		
 	&__title{

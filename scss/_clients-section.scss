@@ -1,55 +1,129 @@
 .clients-main{
 	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	
+	@media (min-width: $sm){
+
+	}
 }
 .person{
 	@include flex_col();	
+	//background-color: blue;
+	margin-bottom: 10px;
 	
-}
-.person-s-img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background-image: url(../img/woman.jpg);
-	background-position: center;
-	background-size: cover;
-	background-color: black;
-}
-.person-first-img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background-image: url(../img/man.jpeg);
-	background-position: center;
-	background-size: cover;
+	&__img{
+		object-fit: cover;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;	
+		
+		@media (min-width: $sm){
+			width: 200px;
+			height: 200px;
+		}
+	}
+	
+	@media (min-width: $sm){
+		/*display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;*/
+		
+		margin-bottom: 30px;
+		
+		&:nth-child(odd){
+			flex-direction: row;
+		}
+		&:nth-child(even){
+			flex-direction: row-reverse;
+			}
+		
+		&:nth-child(odd) > .person-opinion:before{
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 15px solid transparent;
+			border-bottom: 15px solid transparent;
+			border-right: 20px solid $light-grey;
+			position: absolute;
+			top: 50%;
+			left: -15px;
+			//transform: translatey(-50%);
+		}
+		
+		&:nth-child(even) > .person-opinion:before{
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 15px solid transparent;
+			border-bottom: 15px solid transparent;
+			border-left: 20px solid $light-grey;
+			position: absolute;
+			top: 50%;
+			left: auto;
+			right: -45px;
+		}
+	}
 }
 .person-opinion{
 	width: 90%;
 	background-color: $light-grey;
-	margin-bottom: 30px;
-	margin-top: 15px;
+	//background-color: #605d5d;
+	//margin-bottom: 30px;
+	//margin-top: 15px;
 	position: relative;
-	padding: 10px;
+	padding: 15px;
+	
+	@media (min-width:$sm){
+		width: 70%;
+		height: 150px;
+		
+		margin: 0 30px;
+		display: flex;
+		flex-direction: column;
+	
+		justify-content: center;
+	}
 	
 	&::before{
 		content: '';
 		display: block;
 		width: 0;
 		height: 0;
-		border-left: 15px solid transparent;
-		border-right: 15px solid transparent;
+		border-left: 10px solid transparent;
+  		border-right: 10px solid transparent;
 		border-bottom: 15px solid $light-grey;
+	//	border-bottom: 15px solid #605d5d;
 		position: absolute;
 		left: 50%;
 		top: -5px;
-		transform: translateX(-50%) translateY(-50%);	
+		transform: translateX(-50%) translateY(-50%);
+		
+		/*@media (min-width:$sm){
+			top: 50%;
+			left: 0px;
+		}*/
 	}
 	&__sentence{
 		font-size: 1.6em;
 		margin-bottom: 5px;
+		
+		@media (min-width: $sm){
+			font-size: 1.7em;
+		}
 	
 	}
 	&__name{
 		color: $light-green;
 		margin-bottom: 20px;
+		font-size: 1.5em;
+		
+		@media (min-width: $sm){
+			font-size: 1.7em;
+		}
+		
 	}
 }

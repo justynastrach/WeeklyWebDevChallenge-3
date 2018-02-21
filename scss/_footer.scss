@@ -1,12 +1,24 @@
 .footer{
 	padding-top: 20px;
 	padding-bottom: 30px;
+	
+	@media (min-width: $sm){
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		
+	}
 }
 .footer-block{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
+	
+	@media (min-width: $sm){
+		margin: 0 10px;
+	}
+	
 }
 .social-link{
 	

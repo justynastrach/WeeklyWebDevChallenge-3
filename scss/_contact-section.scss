@@ -19,7 +19,11 @@
 		&:hover{
 		cursor: pointer;
 		background-color: #222222;
-	}
+		}
+		
+		@media (min-width:$sm){
+			margin-top: 40px;
+		}
 	}
 	
 }

@@ -6,7 +6,7 @@ var menu = document.getElementById('menu');
 
 menu_btn.addEventListener('click', function classToggle() {
 	menu.classList.toggle('menu');
-    menu.classList.toggle('menu-hidden');
+    menu.classList.toggle('menu-opened');
 
 });
 

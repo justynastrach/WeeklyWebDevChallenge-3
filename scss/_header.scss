@@ -9,22 +9,42 @@
 	width: 100%;
 	z-index: 2;
 }
+
+
 .header-logo{
 	width: 50%;
 	margin-top: 15px;
 	margin-left: 5%;
 }
-.menu-hidden{
+/*.menu-hidden{
 	animation: menu-close 500ms ease-in-out forwards;
 	
 	display: none;
 	
-}
+}*/
 .menu{
-	//display: block;
+	display: none;
+	
+	&__element{
+		background-color: red;
+		height: 50px;
+		display: block;
+		
+		&:hover{
+			cursor: pointer;
+			background-color: $light-green;
+		}
+	}
+	
+/*	@media (min-width: $sm){
+		display: block;
+	}*/
+	
+}
+.menu-opened{
 	position: absolute;
 	background-color: #fff;
-	height: 150px;
+	height: 180px;
 	width: 100%;
 	text-align: center;
 	z-index: 2;
@@ -32,11 +52,12 @@
 	margin-top: 0;
 	padding: 20px 0;
 	list-style: none;
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	animation: menu-open 500ms ease-in-out forwards;
 	
 	&__element{
-		padding: 5px 0;
 		&:hover{
 			cursor: pointer;
 			background-color: $light-green;
@@ -63,7 +84,6 @@
 		cursor: pointer;
 	}
 
-
 	&__line{
 		display: block;
 		position: absolute;
@@ -72,7 +92,7 @@
 		border-radius: 3px;
 		background-color: $dark-grey;
 	}
-
+	
 	&__line:nth-child(1){
 		top: 5px;
 	}
@@ -86,27 +106,13 @@
 
 @keyframes menu-open{
 	0%{
-		transform: rotateX(50deg) translateY(50px);
+		transform: rotateX(80deg) translateY(50px);
 	}
 	100%{
 		transform: rotateY(0deg) translateX(0px);
 	}
 }
-@keyframes menu-close{
-		0%{
-		display: block;
-		background-color: #fff;
-		transform: rotateY(0deg) translateX(0px);
-			
-	}
-	100%{
-		background-color: #fff;
-		transform: rotateY(-90deg) translateY(50px);
 
-	}
-
-
-}
 
 
 

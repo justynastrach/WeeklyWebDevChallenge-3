@@ -2,13 +2,27 @@
 	background-color: #222222;
 	padding-top: 30px;
 	padding-bottom: 10px;
-
+	width: 100%;
+	
+	@media (min-width:$sm){
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 }
+
 .infos-block{
 	display: flex;
 	flex-direction: column;
+
 	width: 80%;
 	margin-bottom: 20px;
+	
+	@media (min-width: $sm){
+		
+		width: 30%;
+	/*	align-content: space-around;*/
+	}
 	
 	&__title{
 		margin-bottom: 20px;
@@ -16,7 +30,11 @@
 		color: #fff;
 		
 	}
+	
+
 }
+
+
 .infos-item{
 	margin-bottom: 20px;
 	display: flex;
