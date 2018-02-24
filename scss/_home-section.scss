@@ -4,6 +4,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   z-index: 1; 
  	 &__title {
 		font-size: 4.5em;
@@ -11,33 +16,35 @@
 		padding: 0;
 		margin: 0;
 		color: #fff;
-		margin-top: 150px;
+	//	margin-top: 150px;
 		text-align: center;
 		
 		 @media (min-width: $sm){
-			 width: 60%;
+			 font-size: 5.5em;
+			 width: 70%;
 		 }
 		 
 	}
   	&__subtitle {
     	color: #fff; 
+		@media (min-width: $sm){
+			font-size: 1.8em;
+		}
 	}
 	
  	 &__button {
 		width: 200px;
 		height: 60px;
-		margin-top: 30px;
+		margin-top: 20px;
 		border-radius: 30px;
 		border: none;
 		color: #fff;
+		 font-size: 1.3em;
 		font-family: 'Montserrat-Bold';
 		background-color: #7cc576;
+		 
+		 @media (min-width: $sm){
+			 font-size: 1.5em;
+		 }
 	}
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 3%; }

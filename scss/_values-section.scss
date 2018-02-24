@@ -8,23 +8,36 @@
 	@media (min-width: $sm){
 		display: flex;
 		flex-direction: row;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 .values-item{
 	@include flex_col();
 	margin-bottom: 20px;
 	
+		@media (min-width: $sm){
+			
+			
+			width: 25%;
+			margin-right: 20px;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+	
 	&__img{
 		width: 70px;
 		height: 70px;
 	}
 	&__title{
-		font-size: 16px;
+		font-size: 1.6em;
 		padding-top: 10px;	
 	}
 	&__subtitle{
 		margin: 0;
 		padding: 10px 0;
-		font-size: 12px;
+		font-size: 1.3em;
 	}
 }

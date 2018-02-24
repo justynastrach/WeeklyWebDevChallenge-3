@@ -1,7 +1,5 @@
 .infos{
 	background-color: #222222;
-	padding-top: 30px;
-	padding-bottom: 10px;
 	width: 100%;
 	
 	@media (min-width:$sm){
@@ -15,26 +13,27 @@
 	display: flex;
 	flex-direction: column;
 
+	margin-left: auto;
+	margin-right: auto;
 	width: 80%;
 	margin-bottom: 20px;
 	
-	@media (min-width: $sm){
-		
+	@media (min-width: $sm){	
 		width: 30%;
-	/*	align-content: space-around;*/
 	}
 	
 	&__title{
 		margin-bottom: 20px;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		color: #fff;
 		
 	}
 	
+	&--tweets:hover{
+	}
+	
 
 }
-
-
 .infos-item{
 	margin-bottom: 20px;
 	display: flex;
@@ -46,6 +45,7 @@
 	&__text{
 		width: 90%;
 		color: #fff;
+		font-size: 1.3em;
 		text-align: left;
 		margin: 0 20px;
 	}

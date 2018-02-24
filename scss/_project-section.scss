@@ -1,11 +1,43 @@
 .project{
 	//height: 700px;
+		/*@media (min-width: $sm){
+		background: url('../img/bg_ipad.png');		
+		background-repeat: no-repeat;
+		background-position: 500px 300px;
+		background-size: 500px 300px;*/
+	//}
+	
+	background: url('../img/bg_ipad.png') no-repeat top 280px right -100px;	
+		background-size: 500px 300px;
+
+}
+.project .container{
+	@media (min-width: $sm){
+		
+	}
 }
 .project-main{
-	padding-bottom: 50px;
+	
+	@media (min-width: $sm){
+		//margin-right: 0;
+		width: 60%;
+	}
+
+	
+	&__title{
+		font-size: 1.6em;
+		
+		@media (min-width: $sm){
+			font-size: 1.7em;
+		}
+	}
 	&__subtitle{
-		padding-bottom: 20px;
-		font-size: 14px;
+		font-size: 1.4em;
+		text-align: left;
+		
+		@media (min-width: $sm){
+			font-size: 1.5em;
+		}
 	}
 	&__link{
 		text-decoration: none;
@@ -14,6 +46,11 @@
 		font-size: 1.4em;
 		margin-top: 40px;
 		position: relative;
+		
+		@media (min-width: $sm){
+			/*margin-left: 100px;*/
+			font-size: 1.5em;
+		}
 	}
 	&__link::after{
 		content: url(../img/Arrow.png);
@@ -24,30 +61,61 @@
 	}
 }
 .project-list{
-	margin: 30px 0;
+	@media (min-width: $sm){
+		margin-top: 10px;
+	}
+	
 }
 .project-item{
-	@include flex_row();
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
+	//@include flex_row();
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin-bottom: 30px;
 	margin-top: 30px;
-	max-width: 500px;
+	
+	@media (min-width: $sm){
+		margin-top: 10px;
+	}
+	
 	&__icon{
 		width: 60px;
 		height: 60px;
+		
+		@media (min-width: $sm){
+		width: 70px;
+		height: 70px;
+	}
 	}
 	&__title{
 		margin: 0;
 		font-size: 1.6em;
+		font-family: 'Montserrat-Bold';
+		text-align: center;
+		@media (min-width: $sm){
+			font-size: 1.7em;
+		}
 	}
 	&__subtitle{
 		font-size: 1.4em;
-		margin: 0;
+		margin-top: 0px;
+		@media (min-width: $sm){
+			padding: 0;
+			margin: 0;
+			font-size: 1.5em;
+			width: 100%;
+		}
 	}
 }
 .text-wrapper{
-	//padding-top: 15px;
 	@include flex_col();
-	margin-left: 5px;
+	padding-left: 5px;
+	margin: auto;
+	width: 90%;
+	background-color: pink;
+	text-align: left;
+	
 }

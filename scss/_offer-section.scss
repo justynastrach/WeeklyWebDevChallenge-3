@@ -6,7 +6,6 @@
 	
 	&__title{
 		color: #fff;
-		padding-top: 70px;
 	}
 	&__title-sign{
 		padding-left: 10px;
@@ -15,10 +14,11 @@
 	&__subtitle{
 		font-size: 14px;
 		color: #cccccc;
-		margin-bottom: 0;
-	}
-	
-		
+		margin-bottom: 30px;
+	}	
+}
+.offer .container{
+	width: 70%;
 }
 .offer-space{
 	display: none;
@@ -27,6 +27,7 @@
 	@include flex_col();
 	&__btn{
 		@include green_btn(160px);
+		
 	}
 }
 
@@ -36,6 +37,10 @@
 	padding: 0;
 	margin: 0;
 	color: #cccccc;
+	
+	@media (min-width: $sm){
+		font-size: 1.5em;
+	}
 
 	
 	&__element{

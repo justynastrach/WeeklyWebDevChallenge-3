@@ -1,5 +1,8 @@
 .header{
 	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 	margin: 0;
 	padding: 0;
 	top: 0;
@@ -8,37 +11,60 @@
 	height: 60px;
 	width: 100%;
 	z-index: 2;
+	
+	@media (min-width: $sm){
+		height: 80px;
+	} 
 }
 
-
-.header-logo{
-	width: 50%;
-	margin-top: 15px;
-	margin-left: 5%;
+.logo{
+	flex: 1;
+	margin: auto;
+	margin-left: 10%;
 }
-/*.menu-hidden{
-	animation: menu-close 500ms ease-in-out forwards;
+
+.nav{
+	flex: 1;
 	
-	display: none;
-	
-}*/
+	@media (min-width: $md){
+		flex: 2;
+	}
+	@media (min-width: $lg){
+		flex: 1;
+	}
+}
 .menu{
+	//display: none;
 	display: none;
+	
+	@media (min-width: $sm){
+		display: flex;
+		justify-content: flex-end;
+		align-content: center;
+		width: 90%;
+		height: 100%;
+		margin-top: auto;
+		margin-bottom: auto;
+		font-family: 'Montserrat-Bold';
+	}
 	
 	&__element{
-		background-color: red;
-		height: 50px;
 		display: block;
 		
 		&:hover{
 			cursor: pointer;
-			background-color: $light-green;
+			/*background-color: $light-green;*/
 		}
-	}
-	
-/*	@media (min-width: $sm){
-		display: block;
-	}*/
+		
+		@media (min-width: $sm){
+			flex: 2;
+			margin: auto;
+			font-size: 1.4em;
+			color: #777777;
+			width: auto; 
+			text-align: right;
+		}
+	}	
 	
 }
 .menu-opened{
@@ -62,10 +88,6 @@
 			cursor: pointer;
 			background-color: $light-green;
 		}
-		/*&:nth-child(odd){
-			background-color: #eff5ee;
-		}*/
-
 	}
 }
 
@@ -82,6 +104,10 @@
 
 	&:hover{
 		cursor: pointer;
+	}
+	
+	@media (min-width: $sm){
+		display: none;
 	}
 
 	&__line{
