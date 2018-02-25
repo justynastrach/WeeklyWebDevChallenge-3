@@ -6,10 +6,10 @@
 	width: 80%;
 	//padding: 80px 30px 50px;
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 90px;
 	
 	@media (min-width: $sm){
-		width: 90%;
+		width: 80%;
 	}
 }
 section{
@@ -57,10 +57,10 @@ p{
 .title{
 	font-family: 'Montserrat-Bold', 'RobotoSlab-Bold';
 	/*padding-top: 50px;*/
-	font-size: 3.2em;
+	font-size: 3.4em;
 	
 	@media (min-width: $sm){
-		font-size: 3.5em; 
+		font-size: 3.7em; 
 	}
 	
 	@media (min-width: $md){
@@ -70,17 +70,12 @@ p{
 }
 .subtitle{
 	font-size: 1.6em;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 	
-	@media (min-width: $md){
+	@media (min-width: $sm){
 		font-size: 1.8em;
 	}
-	@media (min-width: $lg){
+	@media (min-width: $md){
 		font-size: 2em;
 	}
-}
-.container{
-	//padding: 0 30px;
-	//margin: 0 15px;
-	//background-color: pink;
 }

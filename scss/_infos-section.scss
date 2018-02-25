@@ -9,6 +9,15 @@
 	}
 }
 
+.infos-container{
+	@media (min-width:$sm){
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 50px;
+		width: 85%;
+	}
+}
+
 .infos-block{
 	display: flex;
 	flex-direction: column;
@@ -16,10 +25,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	
 	@media (min-width: $sm){	
 		width: 30%;
+		margin-bottom: 0;
 	}
 	
 	&__title{
@@ -27,7 +37,12 @@
 		font-size: 1.6em;
 		color: #fff;
 		
+		@media (min-width: $sm){
+			font-size: 1.7em;
+		}
 	}
+	
+	
 	
 	&--tweets:hover{
 	}
@@ -45,9 +60,13 @@
 	&__text{
 		width: 90%;
 		color: #fff;
-		font-size: 1.3em;
+		font-size: 1.4em;
 		text-align: left;
 		margin: 0 20px;
+		
+		@media (min-width: $sm){
+			font-size: 1.5em;
+		}
 	}
 	
 	&__icon{

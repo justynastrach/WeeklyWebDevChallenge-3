@@ -5,7 +5,6 @@ section{
 	margin-bottom: 10px;
 }
 .clients-main{
-	padding-bottom: 50px;
 	display: flex;
 	flex-direction: column;
 	
@@ -15,15 +14,18 @@ section{
 }
 .person{
 	@include flex_col();	
-	margin-bottom: 10px;
+	
+	&:not(:last-child){
+		margin-bottom: 80px;
+	}
+	
 	
 	&__img{
 		object-fit: cover;
 		width: 150px;
 		height: 150px;
 		border-radius: 50%;	
-		margin-bottom: 20px;
-		
+	
 		@media (min-width: $sm){
 			width: 200px;
 			height: 200px;
@@ -31,12 +33,6 @@ section{
 	}
 	
 	@media (min-width: $sm){
-		/*display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-content: center;*/
-		
-		margin-bottom: 30px;
 		
 		&:nth-child(odd){
 			flex-direction: row;
