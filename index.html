@@ -11,19 +11,22 @@
 		
 			<a class="logo" href="#home"><img src="img/logo.png" alt="Threehouse"></a>
 
-		<nav id="nav" class="nav" >
-			<ul id="menu" class="menu">
-				<li class="menu__element">HOME</li>
-				<li class="menu__element">ABOUT</li>
-				<li class="menu__element">BLOG</li>
-				<li class="menu__element">PORTFOLIO</li>
-				<li class="menu__element">CONTACT</li>
-			</ul>
-			<button id="menu-button" class="menu-button nav__toggler" type="button" aria-expanded="false" title="Open/close menu">
+
+
+		<button id="menu-button" class="menu-button nav__toggler up" type="button" aria-expanded="false" title="Open/close menu">
 				<span class="menu-button__line"></span>
 				<span class="menu-button__line"></span>
 				<span class="menu-button__line"></span>
 			</button>
+		<nav id="nav" class="nav hide" >
+		
+			<ul id="menu" class="menu">
+				<li class="menu__element"><a class="menu__element-link" href="#home">HOME</a></li>
+				<li class="menu__element"><a class="menu__element-link" href="#about">ABOUT</a></li>
+				<li class="menu__element"><a class="menu__element-link" href="#blog">BLOG</a></li>
+				<li class="menu__element"><a class="menu__element-link" href="#portfolio">PORTFOLIO</a></li>
+				<li class="menu__element"><a class="menu__element-link" href="#contact">CONTACT</a></li>
+			</ul>
 		</nav>
 	</header>
 <!--========================HOME-PAGE==========================-->
@@ -35,7 +38,7 @@
 <!--	</div>-->
 </section>
 <!--====================-SERVICES SECTION========================-->
-<section id="services" class="services">
+<section id="about" class="services">
 	<div class="container">
 			<h2 class="title">PROFESSIONAL SERVICES</h2>
 			<p class="subtitle">Proin iaculis purus consequat sem cure </p>
@@ -64,7 +67,7 @@
 	</div>
 </section>
 <!--============OFFER SECTION==============-->
-<section class="offer">
+<section id="blog" class="offer">
 <div class="container">
 
 	<div class="offer-space">
@@ -86,7 +89,7 @@
 </div><!--/container-->
 </section>
 <!--=================PROJECT SECTION=======================-->
-<section class="project">
+<section id="portfolio" class="project">
 	<div class="container">
 		<h2 class="title">latest project</h2>
 		<p class="subtitle">Proin iaculis purus consequat sem cure </p>
@@ -190,7 +193,7 @@
 	</div>
 </section>
 <!------------------------------------CONTACT SECTION-------------------------------------->
-<section class="contact">
+<section id="contact" class="contact">
 	<div class="container">
 		<h2 class="contact__title title">ready to talk about your next project?</h2>
 		<button class="contact__button button" role="button" type="button">Contact us</button> <!--role czy type powinno być czy oba?-->
@@ -293,6 +296,7 @@
 </footer>
 
 
+ <script src="jquery/jquery-3.3.1.min.js"></script>
 <script src="js/script.js">
 </script>
 </body>
