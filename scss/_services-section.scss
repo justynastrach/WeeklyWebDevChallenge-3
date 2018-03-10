@@ -5,9 +5,7 @@
 .services-main{
 	
 	@media (min-width: $sm){
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		@include flex_row();
 	}	
 }
 .services-item{

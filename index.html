@@ -4,21 +4,17 @@
 	<meta charset="UTF-8">
 	<title>TreeHouse</title>
 	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header id="header" class="header">
 		
-			<a class="logo" href="#home"><img src="img/logo.png" alt="Threehouse"></a>
-
-
-
-		<button id="menu-button" class="menu-button nav__toggler up" type="button" aria-expanded="false" title="Open/close menu">
+		<a class="logo" href="#home"><img src="img/logo.png" alt="Threehouse"></a>
+		<button id="menu-button" class="menu-button nav__toggler up" type="button" aria-expanded="false" title="Open/close menu" aria-label="open or hide menu">
 				<span class="menu-button__line"></span>
 				<span class="menu-button__line"></span>
 				<span class="menu-button__line"></span>
 			</button>
-		<nav id="nav" class="nav hide" >
+		<nav id="nav" class="nav">
 		
 			<ul id="menu" class="menu">
 				<li class="menu__element"><a class="menu__element-link" href="#home">HOME</a></li>
@@ -29,7 +25,7 @@
 			</ul>
 		</nav>
 	</header>
-<!--========================HOME-PAGE==========================-->
+<!--==========HOME-PAGE=========-->
 <section id="home" class="home">
 	<!--<div class="home-container">-->
 		<h1 class="home__title title">Creative digital solution</h1>
@@ -37,7 +33,7 @@
 		<button class="home__button">VIEW PORTFOLIO</button>
 <!--	</div>-->
 </section>
-<!--====================-SERVICES SECTION========================-->
+<!--==========-SERVICES SECTION============-->
 <section id="about" class="services">
 	<div class="container">
 			<h2 class="title">PROFESSIONAL SERVICES</h2>
@@ -46,19 +42,19 @@
 		<div class="services-main">
 
 			<div class="services-item services-block--design">
-				<img src="img/icon_heart.png">
+				<img src="img/icon_heart.png" alt="">
 				<h3 class="services-item__title">BEAUTIFUL DESIGNS</h3>
 				<p class="services-item__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 			</div>
 
 			<div class="services-item services-block--web">
-				<img src="img/icon_phone.png">
+				<img src="img/icon_phone.png" alt="">
 				<h3 class="services-item__title">RESPONSIVE WEB</h3>
 				<p class="services-item__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 			</div>
 
 			<div class="services-item services-block--tools">
-				<img src="img/icon_tools.png">
+				<img src="img/icon_tools.png" alt="">
 				<h3 class="services-item__title">MARKETING TOOLS</h3>
 				<p class="services-item__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 			</div>
@@ -66,15 +62,16 @@
 		</div><!--/services-main-content-->
 	</div>
 </section>
-<!--============OFFER SECTION==============-->
+<!--============OFFER SECTION===========-->
 <section id="blog" class="offer">
-<div class="container">
+
 
 	<div class="offer-space">
-		<img src="img/tool.png" alt="">
+		<!--<img src="img/tool.png" alt="" class="offer-space__image">-->
 	</div><!--/offer-space-->
 
 	<div class="offer-main">
+	<div class="container">
 		<h2 class="title offer__title">JUST RELAX<span class="offer__title-sign">&</span><br> LET US DO THE HEAVY LIFTING</h2>
 		<p class="subtitle offer__subtitle">Proin iaculis purus consequat sem cure  digni ssim. Donec
 			porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
@@ -83,12 +80,12 @@
 			<li class="offer-list__element">Regular Updates</li>
 			<li class="offer-list__element">Round The Clock Support</li>
 		</ul>
-		<button class="offer-main__btn">LEARN MORE</button>
+		<button class="offer-main__btn" aria-label="learn more about an offer">LEARN MORE</button>
 	</div><!--/offer-main-->
 
 </div><!--/container-->
 </section>
-<!--=================PROJECT SECTION=======================-->
+<!--=========PROJECT SECTION=============-->
 <section id="portfolio" class="project">
 	<div class="container">
 		<h2 class="title">latest project</h2>
@@ -101,21 +98,21 @@
 		
 		<div class="project-list">
 			<div class="project-item">
-				<img class="project-item__icon" src="img/icon_e_commerance.png">
+				<img class="project-item__icon" src="img/icon_e_commerance.png" alt="">
 				<div class="text-wrapper">
 					<h4 class="project-item__title">E-Commerce Ready</h4>
 					<p class="project-item__subtitle">Proin iaculis purus consequat sem cure  digni ssim.</p>
 				</div>
 			</div>
 		    <div class="project-item">
-				<img class="project-item__icon" src="img/icon_check.png">
+				<img class="project-item__icon" src="img/icon_check.png" alt="">
 				<div class="text-wrapper">
 					<h4 class="project-item__title">Powerful SEO Features</h4>
 					<p class="project-item__subtitle">Proin iaculis purus consequat sem cure. </p>
 				</div>
 			</div>
 			<div class="project-item">
-				<img class="project-item__icon" src="img/icon_secure.png">
+				<img class="project-item__icon" src="img/icon_secure.png" alt="">
 				<div class="text-wrapper">
 					<h4 class="project-item__title">Secure Encryption</h4>
 					<p class="project-item__subtitle">Proin iaculis purus consequat sem cure iaculis purus. </p>
@@ -138,21 +135,21 @@
 
 	<div class="values-main">
 		<div class="values-item">  
-			<img class="values-item__img" src="img/icon_tune.png">
+			<img class="values-item__img" src="img/icon_tune.png" alt="">
 			<h3 class="values-item__title title">Work-Life Balance</h3>
 			<p class="values-item__subtitle">Proin iaculis purus consequat sem cure
 			digni ssim. Donec porttitora entum suscipit
 			aenean rhoncus posuere odio in tincidunt.</p>
 		</div>
 		<div class="values-item">  
-			<img class="values-item__img" src="img/icon_chart.png">
+			<img class="values-item__img" src="img/icon_chart.png" alt="">
 			<h3 class="values-item__title title">Quality Over Quantity</h3>
 			<p class="values-item__subtitle">Proin iaculis purus consequat sem cure
 			digni ssim. Donec porttitora entum suscipit
 			aenean rhoncus posuere odio in tincidunt.</p>
 		</div>
 		<div class="values-item">
-			<img class="values-item__img" src="img/icon_star.png">
+			<img class="values-item__img" src="img/icon_star.png" alt="">
 			<h3 class="values-item__title title">Deliver Excellence</h3>
 			<p class="values-item__subtitle">Proin iaculis purus consequat sem cure
 			digni ssim. Donec porttitora entum suscipit
@@ -202,9 +199,10 @@
 <!-----------------------------------LOGOS SECTION---------------------------------------->
 <section class="logos">
 	<div class="container">
-		<img src="img/logo_envato.png" class="logos__image">
-		<img src="img/logo_wordpress.png" class="logos__image">
-		<img src="img/logo_tuts.png" class="logos__image"><img src="img/logo_microlancer.png" class="logos__image">
+		<img src="img/logo_envato.png" class="logos__image" alt="logo of envato">
+		<img src="img/logo_wordpress.png" class="logos__image" alt="logo of wordpress">
+		<img src="img/logo_tuts.png" class="logos__image" alt="aetuts">
+		<img src="img/logo_microlancer.png" class="logos__image" alt="logo of microlancer">
 	</div>
 </section>
 <!---------------------------------------INFOS SECTION----------------------------->
@@ -286,10 +284,10 @@
 		</div>
 		<div class="footer-block footer-block--social">
 		
-			<a href="#" class="social-link"><img src="img/twitter_icon.png" class="social-icon"></a>
-			<a href="#" class="social-link"><img src="img/fb_icon.png" class="social-icon"></a>
-			<a href="#" class="social-link"><img src="img/pinterest_icon.png" class="social-icon"></a>
-			<a href="#" class="social-link"><img src="img/google_icon.png" class="social-icon"></a>
+			<a href="#" class="social-link"><img src="img/twitter_icon.png" class="social-icon" alt="twitter"></a>
+			<a href="#" class="social-link"><img src="img/fb_icon.png" class="social-icon" alt="facebook"></a>
+			<a href="#" class="social-link"><img src="img/pinterest_icon.png" class="social-icon" alt="pinterest"></a>
+			<a href="#" class="social-link"><img src="img/google_icon.png" class="social-icon" alt="google"></a>
 
 		</div>
 	</div>

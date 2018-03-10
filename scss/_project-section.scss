@@ -4,24 +4,31 @@
 		background: url('../img/bg_ipad.png') no-repeat top 280px right -100px;	
 		background-size: 500px 300px;
 	}
+	@media (min-width: $md){
+		background: url('../img/bg_ipad.png') no-repeat top 250px right -200px;	
+		background-size: 700px 500px;
+	}
+	@media (min-width: 1400px){
+		background: url('../img/bg_ipad.png') no-repeat top 150px right -200px;	
+		background-size: 1000px 800px;
+	}
 
 }
-.project .container{
-	@media (min-width: $sm){
-		
-	}
-}
+
 .project-main{
 	
 	@media (min-width: $sm){
-		//margin-right: 0;
 		width: 60%;
 	}
+	@media (min-width: $sm){
+		width: 50%;
+	}
+
 
 	
 	&__title{
 		font-size: 1.6em;
-		
+		text-align: left;
 		@media (min-width: $sm){
 			font-size: 1.7em;
 		}
@@ -45,6 +52,10 @@
 		@media (min-width: $sm){
 			/*margin-left: 100px;*/
 			font-size: 1.5em;
+		}
+			@media (min-width: $sm){
+			/*margin-left: 100px;*/
+			font-size: 1.6em;
 		}
 	}
 	&__link::after{
@@ -109,8 +120,6 @@
 	}
 }
 .text-wrapper{
-	//@include flex_col();
-	background-color: red;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -8,8 +8,8 @@
 @mixin flex_row (){
 	display: flex;
     flex-direction: row;
-    //align-items: center;
-    //justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 @mixin green_btn($width){
 	width: $width;
