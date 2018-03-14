@@ -12,25 +12,25 @@
 	z-index: 99;
 	
 	@media (min-width: $md){
-		height: 80px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	} 
 }
 .logo{
 	width: auto;
 	margin: auto;
-	margin-left: 10%;
 }
 
 .nav{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 100%;
-	justify-content: flex-end;
+	width: 70%; 
 }
 
 .menu{	
-	
 	display: none;
 	opacity: 0;
 
@@ -39,60 +39,58 @@
 		opacity: 1;
 		display: flex;
 		color: #000;
-		justify-content: center;
 		list-style: none;
-		align-content: center;
-		width: 65%;
+		align-items: flex-start;
+		width: 85%;
 		height: auto;
-		margin-top: auto;
-		margin-bottom: auto;
-		margin-right: 2%;
 		font-family: 'Montserrat-Bold';
 		font-size: 1.2em;
+		margin: 0;
+		padding: 0;
 	}
+	 @media (min-width: $lg){
+		width: 70%;
+	}
+
 	
 	&__element{
-		margin-right: 5px;
 		
 		&:hover{
 			cursor: pointer;
-			/*background-color: $light-green;*/
 		}
 		
 		&-link{
 			text-decoration: none;
-			color: $dark-grey;
+			color: $dark-grey; 
 		}
 		
 		@media (min-width: $md){
 			font-size: 1.1em;
 			color: #777777;
 			width: 100%; 
-			text-align: center;
+			text-align: left;
 		}
 	}	
 	
 }
 .menu-opened{
-	
+	background-color: #fff;
 	list-style: none;
 	position: absolute;
-	background-color: #fff;
 	height: 300px;
 	width: 100%;
 	text-align: center;
 	font-size: 1.4em;
-	top: 40px;
+	top: 40px;8
+	left: 0;
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	font-family: 'Montserrat-Bold';	
  	opacity: 1;
-  	z-index: 1;
-  	animation: menu-open .5s ease-in;
-
-	
+  	z-index: 99;
+	animation: menu-open .3s ease-in-out;
 }
 
 .menu-button{
@@ -111,10 +109,7 @@
 		
 		cursor: pointer;
 	}
-	
-	@media (min-width: $sm){
-		//top: 32.5px;
-	}
+
 	@media (min-width: $md){
 		display: none;
 	}

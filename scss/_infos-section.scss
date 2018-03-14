@@ -9,8 +9,7 @@
 
 .infos-container{
 	@media (min-width:$sm){
-		@include flex_row();
-		padding-bottom: 50px;
+		display: flex;
 		width: 85%;
 	}
 }
@@ -18,15 +17,13 @@
 .infos-block{
 	display: flex;
 	flex-direction: column;
-
 	margin-left: auto;
 	margin-right: auto;
+	height: 100%;
 	width: 80%;
-	margin-bottom: 30px;
 	
 	@media (min-width: $sm){	
 		width: 30%;
-		margin-bottom: 0;
 	}
 	
 	&__title{
@@ -37,21 +34,22 @@
 		@media (min-width: $sm){
 			font-size: 1.7em;
 		}
-	}
-	
-	
-	
-	&--tweets:hover{
+		@media (min-width: $md){
+			font-size: 1.8em;
+		}
+		@media (min-width: $md){
+			font-size: 1.9em;
+		}
 	}
 	
 
 }
+
 .infos-item{
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	//align-items: center;
 	
 	
 	&__text{
@@ -61,9 +59,19 @@
 		text-align: left;
 		margin: 0 20px;
 		
+		&--twitter:hover{
+			cursor: pointer;
+			color: #63b0ff;
+		}
+		&--post:hover{
+			cursor:pointer; 
+			color: $light-green;
+		}
+		
 		@media (min-width: $sm){
 			font-size: 1.5em;
-		}
+		}	
+		
 	}
 	
 	&__icon{

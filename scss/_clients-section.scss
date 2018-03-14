@@ -6,9 +6,6 @@ section{
 	display: flex;
 	flex-direction: column;
 	
-	@media (min-width: $sm){
-
-	}
 }
 .person{
 	@include flex_col();	
@@ -74,12 +71,10 @@ section{
 .person-opinion{
 	width: 90%;
 	background-color: $light-grey;
-	//background-color: #605d5d;
-	//margin-bottom: 30px;
-	//margin-top: 15px;
 	position: relative;
 	padding: 15px;
 	margin-top: 5%;
+	z-index: -1;
 	
 	@media (min-width:$sm){
 		width: 70%;
@@ -111,21 +106,27 @@ section{
 		}*/
 	}
 	&__sentence{
-		font-size: 1.6em;
+		font-size: 1.8em;
 		margin-bottom: 5px;
 		
 		@media (min-width: $sm){
-			font-size: 1.7em;
+			font-size: 1.9em;
+		}
+		@media (min-width: $sm){
+			font-size: 2em;
 		}
 	
 	}
 	&__name{
 		color: $light-green;
 		margin-bottom: 20px;
-		font-size: 1.5em;
+		font-size: 1.7em;
 		
 		@media (min-width: $sm){
-			font-size: 1.7em;
+			font-size: 1.8em;
+		}
+		@media (min-width: $sm){
+			font-size: 1.9em;
 		}
 		
 	}

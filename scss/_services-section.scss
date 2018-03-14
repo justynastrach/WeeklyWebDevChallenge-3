@@ -10,7 +10,7 @@
 }
 .services-item{
 	@include flex_col();
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	
 	@media (min-width: $sm){
 		width: 30%;
@@ -30,15 +30,27 @@
 		@media (min-width: $sm){
 			font-size: 1.7em;
 		}
+		@media (min-width: $md){
+			font-size: 1.8em;
+		}
+		@media (min-width: $lg){
+			font-size: 2em;
+		}
 		
 	}
 	&__text{
 		font-size: 1.3em;
 		margin: 0;
 		padding: 0;
-		
+		width: 80%;
 		@media (min-width: $sm){
 			font-size: 1.3em;
+		}
+		@media (min-width: $md){
+			font-size: 1.4em;
+		}
+		@media (min-width: $sm){
+			font-size: 1.5em;
 		}
 		
 	}

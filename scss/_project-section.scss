@@ -1,4 +1,6 @@
 .project{
+	padding: 0;
+	margin: 0;
 
 	@media (min-width: $sm){
 		background: url('../img/bg_ipad.png') no-repeat top 280px right -100px;	
@@ -9,7 +11,7 @@
 		background-size: 700px 500px;
 	}
 	@media (min-width: 1400px){
-		background: url('../img/bg_ipad.png') no-repeat top 150px right -200px;	
+		background: url('../img/bg_ipad.png') no-repeat top 170px right -200px;	
 		background-size: 1000px 800px;
 	}
 
@@ -18,12 +20,14 @@
 .project-main{
 	
 	@media (min-width: $sm){
-		width: 60%;
-	}
-	@media (min-width: $sm){
 		width: 50%;
 	}
-
+	@media (min-width: $md){
+		width: 60%;
+	}
+	@media (min-width: $lg){
+		width: 50%;
+	}
 
 	
 	&__title{
@@ -31,6 +35,12 @@
 		text-align: left;
 		@media (min-width: $sm){
 			font-size: 1.7em;
+		}
+		@media (min-width: $md){
+			font-size: 1.8em;
+		}
+		@media (min-width: $lg){
+			font-size: 1.9em;
 		}
 	}
 	&__subtitle{
@@ -40,8 +50,15 @@
 		@media (min-width: $sm){
 			font-size: 1.5em;
 		}
+		@media (min-width: $md){
+			font-size: 1.6em;
+		}
+		@media (min-width: $lg){
+			font-size: 1.7em;
+		}
 	}
 	&__link{
+		z-index: -1;
 		text-decoration: none;
 		color: $light-green;
 		font-family: 'RobotoSlab-Bold';
@@ -50,12 +67,14 @@
 		position: relative;
 		
 		@media (min-width: $sm){
-			/*margin-left: 100px;*/
 			font-size: 1.5em;
 		}
 			@media (min-width: $sm){
-			/*margin-left: 100px;*/
 			font-size: 1.6em;
+		}
+		
+			@media (min-width: $sm){
+			font-size: 1.7em;
 		}
 	}
 	&__link::after{
@@ -74,13 +93,8 @@
 	
 }
 .project-item{
-	//@include flex_row();
 	display: flex;
 	flex-direction: row;
-	/*align-content: center;
-	justify-content: center;*/
-	/*margin-left: auto;
-	margin-right: auto;*/
 	margin-bottom: 30px;
 	margin-top: 30px;
 	
@@ -103,13 +117,26 @@
 		font-family: 'Montserrat-Bold';
 		text-align: left;
 		@media (min-width: $sm){
+			font-size: 1.5em;
+		}
+		@media (min-width: $md){
+			font-size: 1.6em;
+		}
+		@media (min-width: $md){
 			font-size: 1.7em;
 		}
 	}
 	&__subtitle{
-		font-size: 1.4em;
+		font-size: 1.5em;
 		margin-top: 0px;
 		text-align: left;
+		
+		@media (min-width: $sm){
+			font-size: 1.6em;
+		}
+		@media (min-width: $sm){
+			font-size: 1.7em;
+		}
 		
 		@media (min-width: $sm){
 			padding: 0;
@@ -127,7 +154,4 @@
 	//margin: auto;
 	width: 100%;
 	height: 70px;
-	
-	//text-align: left;
-	
 }

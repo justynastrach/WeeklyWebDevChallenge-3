@@ -3,13 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TreeHouse</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+
 	<header id="header" class="header">
 		
 		<a class="logo" href="#home"><img src="img/logo.png" alt="Threehouse"></a>
-		<button id="menu-button" class="menu-button nav__toggler up" type="button" aria-expanded="false" title="Open/close menu" aria-label="open or hide menu">
+		<button id="menu-button" class="menu-button" type="button" aria-expanded="false" title="Open/close menu" aria-label="open or hide menu">
 				<span class="menu-button__line"></span>
 				<span class="menu-button__line"></span>
 				<span class="menu-button__line"></span>
@@ -25,13 +28,12 @@
 			</ul>
 		</nav>
 	</header>
+	
 <!--==========HOME-PAGE=========-->
 <section id="home" class="home">
-	<!--<div class="home-container">-->
 		<h1 class="home__title title">Creative digital solution</h1>
 		<p class="home__subtitle subtitle">Proin iaculis purus consequat sem cure.</p>
 		<button class="home__button">VIEW PORTFOLIO</button>
-<!--	</div>-->
 </section>
 <!--==========-SERVICES SECTION============-->
 <section id="about" class="services">
@@ -64,11 +66,8 @@
 </section>
 <!--============OFFER SECTION===========-->
 <section id="blog" class="offer">
-
-
 	<div class="offer-space">
-		<!--<img src="img/tool.png" alt="" class="offer-space__image">-->
-	</div><!--/offer-space-->
+	</div>
 
 	<div class="offer-main">
 	<div class="container">
@@ -81,11 +80,11 @@
 			<li class="offer-list__element">Round The Clock Support</li>
 		</ul>
 		<button class="offer-main__btn" aria-label="learn more about an offer">LEARN MORE</button>
-	</div><!--/offer-main-->
+	</div>
 
-</div><!--/container-->
+</div>
 </section>
-<!--=========PROJECT SECTION=============-->
+<!--=========PROJECT SECTION===========-->
 <section id="portfolio" class="project">
 	<div class="container">
 		<h2 class="title">latest project</h2>
@@ -159,7 +158,7 @@
 	</div>
 </section>
 
-<!-----------------------CLIENTS SECTION----------------------------------------------->
+<!--=======CLIENTS SECTION======-->
 <section class="clients">
 	<div class="container">
 		<h2 class="title">our awesome clients</h2>
@@ -189,14 +188,14 @@
 	</div>
 	</div>
 </section>
-<!------------------------------------CONTACT SECTION-------------------------------------->
+<!--======CONTACT SECTION======-->
 <section id="contact" class="contact">
 	<div class="container">
 		<h2 class="contact__title title">ready to talk about your next project?</h2>
-		<button class="contact__button button" role="button" type="button">Contact us</button> <!--role czy type powinno być czy oba?-->
+		<button class="contact__button button" role="button" type="button">Contact us</button> 
 	</div>
 </section>
-<!-----------------------------------LOGOS SECTION---------------------------------------->
+<!--=======LOGOS SECTION======-->
 <section class="logos">
 	<div class="container">
 		<img src="img/logo_envato.png" class="logos__image" alt="logo of envato">
@@ -205,7 +204,7 @@
 		<img src="img/logo_microlancer.png" class="logos__image" alt="logo of microlancer">
 	</div>
 </section>
-<!---------------------------------------INFOS SECTION----------------------------->
+<!--=======INFOS SECTION=======-->
 <section class="infos">
 	<div class="container infos-container">
 
@@ -226,30 +225,28 @@
 			</div>
 		</div><!--/infos-block-->
 
-
-
 		<div class="infos-block infos-block--post">
 		<h3 class="infos-block__title title">Latest Posts</h3>
 			<div class="infos-item">
 				<img class="infos-item__icon" src="img/news_icon.png">
-				<p class="infos-item__text">Made With Love In Toronto</p>
+				<p class="infos-item__text infos-item__text--post">Made With Love In Toronto</p>
 				
 			</div>
 			<div class="infos-item">
 				<img class="infos-item__icon" src="img/photo_icon.png">
-				<p class="infos-item__text">Startup News & Emerging Tech</p>
+				<p class="infos-item__text infos-item__text--post">Startup News & Emerging Tech</p>
 			</div>
 			<div class="infos-item">
 				<img class="infos-item__icon" src="img/news_icon.png">
-				<p class="infos-item__text">Bitcoin Will Soon Rule The World</p>
+				<p class="infos-item__text infos-item__text--post">Bitcoin Will Soon Rule The World</p>
 			</div>
 			<div class="infos-item">
 				<img class="infos-item__icon" src="img/news_icon.png">
-				<p class="infos-item__text">Wearable Technology On The Rise</p>
+				<p class="infos-item__text infos-item__text--post">Wearable Technology On The Rise</p>
 			</div>
 			<div class="infos-item">
 				<img class="infos-item__icon" src="img/media_icon.png">
-				<p class="infos-item__text">Learn Web Design In 30 Days!</p>
+				<p class="infos-item__text infos-item__text--post">Learn Web Design In 30 Days!</p>
 			</div>
 		</div>
 
@@ -258,7 +255,7 @@
 			<div class="infos-item">
 				<img class="infos-item__icon" src="img/twitter_icon.png">
 				<div class="infos-text-wrapper">
-					<p class="infos-item__text">Confucius: Life is really simple, but we insist on making it complicated
+					<p class="infos-item__text infos-item__text--twitter">Confucius: Life is really simple, but we insist on making it complicated
 					<br><b>#famousquotes</b></p>
 					<p class="tweet-time">8 mins ago</p>
 				</div>
@@ -267,7 +264,7 @@
 			<div class="infos-item">
 				<img class="infos-item__icon" src="img/twitter_icon.png">
 				<div class="infos-text-wrapper">
-					<p class="infos-item__text">Grab the Free Treehouse web template at FreebiesXpress!<br>
+					<p class="infos-item__text infos-item__text--twitter">Grab the Free Treehouse web template at FreebiesXpress!<br>
 					<b>#freebies #templates</b></p>
 					<p class="tweet-time">2 days ago</p>
 				</div>
@@ -276,7 +273,7 @@
 
 	</div>
 </section>
-<!--------------------------------FOOTER------------------------------>
+<!--=======FOOTER=======-->
 <footer class="footer">
 	<div class="container footer-container">
 		<div class="footer-block footer-block--copyright">
@@ -293,9 +290,8 @@
 	</div>
 </footer>
 
-
- <script src="jquery/jquery-3.3.1.min.js"></script>
-<script src="js/script.js">
-</script>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
+
 </html>

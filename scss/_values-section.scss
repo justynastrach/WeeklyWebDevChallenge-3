@@ -1,11 +1,9 @@
 .values{
 	background-color: #f9f9f9;
-	//background-color: #aca7a7;
 }
 .values-main{
-
-	//background-color: mediumvioletred;
 	@media (min-width: $sm){
+
 		display: flex;
 		flex-direction: row;
 		margin-right: auto;
@@ -15,7 +13,7 @@
 }
 .values-item{
 	@include flex_col();
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 	
 		@media (min-width: $sm){	
 			position: relative;
@@ -32,11 +30,9 @@
 			top: 17%;
 			left: 85%;
 			background-color: #777777;
-			z-index: 5;
+			z-index: 2;
 		}
 	}
-	
-	/*&:not(:last-child) &__img::before*/
 
 	&__img{
 		width: 70px;
@@ -46,9 +42,6 @@
 			width: 80px;
 			height: 80px;
 		}
-		
-	}
-	&__img:not(:last-child){
 		
 	}
 	
@@ -61,15 +54,24 @@
 			margin: 20px 0;
 			font-size: 1.7em;
 		}
+		@media (min-width: $sm){
+			font-size: 1.8em;
+		}
+		
 	}
 	&__subtitle{
 		margin: 0;
 		padding: 10px 0;
 		font-size: 1.3em;
+		width: 80%;
 		
 		@media (min-width: $sm){
 			font-size: 1.4em;
 			padding: 0;
 		}
+		@media (min-width: $md){
+			font-size: 1.5em;
+		}
+		
 	}
 }
