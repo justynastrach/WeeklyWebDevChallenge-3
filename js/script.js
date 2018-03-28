@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $('.menu__element').click(function() {
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+    });
+});
 
 
 $(".menu-button").on('click', function(event) {
@@ -13,4 +19,5 @@ $("a").on('click', function(event) {
     }, 500);
 
   });
+
 

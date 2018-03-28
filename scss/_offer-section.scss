@@ -1,6 +1,15 @@
-.offer .container{
-	width: 60%;
+.offer-container{
+	width: 80%;
+	
+	padding: 70px 20px 0;
+	
+	@media(min-width:$sm){
+		width: 60%;
+	}
+	
 }
+
+
 
 .offer{
 	height: 650px;

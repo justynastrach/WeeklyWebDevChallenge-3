@@ -19,7 +19,7 @@ body {
   padding: 0;
   font-size: 62.5%; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: #222222;
   text-align: center;
   text-transform: uppercase;
@@ -57,7 +57,7 @@ a:focus {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 80%;
   padding-top: 80px;
   padding-bottom: 90px; }
   @media (min-width: 992px) {
@@ -69,9 +69,6 @@ a:focus {
 
 .header {
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -86,15 +83,24 @@ a:focus {
       flex-direction: row;
       align-items: center; } }
 
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto; }
+
 .logo {
-  width: auto;
-  margin: auto; }
+  height: auto;
+  width: auto; }
 
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 70%; }
+  justify-content: space-between;
+  width: 65%; }
 
 .menu {
   display: none;
@@ -106,15 +112,12 @@ a:focus {
       color: #000;
       list-style: none;
       align-items: flex-start;
-      width: 85%;
+      width: 100%;
       height: auto;
       font-family: 'Montserrat-Bold';
       font-size: 1.2em;
       margin: 0;
       padding: 0; } }
-  @media (min-width: 1200px) {
-    .menu {
-      width: 70%; } }
   .menu__element:hover {
     cursor: pointer; }
   .menu__element-link {
@@ -126,6 +129,13 @@ a:focus {
       color: #777777;
       width: 100%;
       text-align: left; } }
+
+.active > a {
+  border-top: 2px solid #7cc576;
+  padding: 5px; }
+  .active > a:hover {
+    color: #7cc576;
+    transition: all 0.2s ease-in-out; }
 
 .menu-opened {
   background-color: #fff;
@@ -144,7 +154,8 @@ a:focus {
   font-family: 'Montserrat-Bold';
   opacity: 1;
   z-index: 99;
-  animation: menu-open .3s ease-in-out; }
+  animation: menu-open .3s ease-in-out;
+  padding: 0; }
 
 .menu-button {
   position: absolute;
@@ -276,8 +287,12 @@ a:focus {
       .services-item__text {
         font-size: 1.5em; } }
 
-.offer .container {
-  width: 60%; }
+.offer-container {
+  width: 80%;
+  padding: 70px 20px 0; }
+  @media (min-width: 768px) {
+    .offer-container {
+      width: 60%; } }
 
 .offer {
   height: 650px;
@@ -754,6 +769,8 @@ section {
   margin-right: auto;
   height: 100%;
   width: 80%; }
+  .infos-block:not(:first-child) {
+    margin-top: 40px; }
   @media (min-width: 768px) {
     .infos-block {
       width: 30%; } }
