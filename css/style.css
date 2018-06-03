@@ -130,10 +130,10 @@ a:focus {
       width: 100%;
       text-align: left; } }
 
-.active > a {
+.active {
   border-top: 2px solid #7cc576;
   padding: 5px; }
-  .active > a:hover {
+  .active:hover {
     color: #7cc576;
     transition: all 0.2s ease-in-out; }
 
@@ -154,7 +154,7 @@ a:focus {
   font-family: 'Montserrat-Bold';
   opacity: 1;
   z-index: 99;
-  animation: menu-open .3s ease-in-out;
+  animation: all .3s ease-in-out;
   padding: 0; }
 
 .menu-button {
@@ -769,8 +769,6 @@ section {
   margin-right: auto;
   height: 100%;
   width: 80%; }
-  .infos-block:not(:first-child) {
-    margin-top: 40px; }
   @media (min-width: 768px) {
     .infos-block {
       width: 30%; } }

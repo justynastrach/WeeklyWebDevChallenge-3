@@ -40,7 +40,6 @@
 .menu{	
 	display: none;
 	opacity: 0;
-
 	
 	@media (min-width: $md){
 		opacity: 1;
@@ -77,7 +76,7 @@
 	}	
 	
 }
-.active > a{
+.active {
 	border-top: 2px solid #7cc576;
 	padding: 5px;
 	
@@ -104,8 +103,12 @@
 	font-family: 'Montserrat-Bold';	
  	opacity: 1;
   	z-index: 99;
-	animation: menu-open .3s ease-in-out;
+	animation: all .3s ease-in-out;
 	padding: 0;
+
+	@media screen and (min-width:$md){
+		
+	}
 }
 
 .menu-button{
